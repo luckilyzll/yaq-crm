@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="hengxian"></view>
+<view class="big container">
+	<view class="bk" wx:for="{{wuliu}}">
+		<view class="name hengxiang">
+      <view class="name_im"><view class="dian">{{item.dian}}</view></view>
+			<view class="name_text yincang">{{item.name}}</view>
+		</view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/caozuo.png"></image></view>
+      <view class="sj_text yincang">操作：{{item.caozuo}}</view>
+    </view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/cheliang.png"></image></view>
+      <view class="sj_text yincang">车辆：{{item.cheliang}}</view>
+    </view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/dizhi.png"></image></view>
+      <view class="sj_text yincang">地址：{{item.dizhi}}</view>
+    </view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/cangku.png"></image></view>
+      <view class="sj_text yincang">仓库：{{item.cangku}}</view>
+    </view>
+    <view class="sl">
+      <view class="yincang">数量：<text class="sl_cs">{{item.shuliang}}</text></view>
+    </view>
+    <view class="rw hengxiang">
+      <view class="rw_time yincang">入库时间：{{item.shijian}}</view>
+      <view class="rw_img"><image src="../image/renwu.png"></image></view>
+    </view>
+	</view>
+</view>

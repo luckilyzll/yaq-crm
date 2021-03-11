@@ -1,0 +1,25 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="ban">
+    <image src="../image/lsbj.png" class="bg"></image>
+    <view class="tx">
+      <view class="tou">
+        <view class="user"><open-data type="userAvatarUrl"></open-data></view>
+      </view>
+      <view class="nicheng">
+      <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+
+  <view class="gy hengxiang">
+    <view class="gy_img"><image src="../image/ziliao.png"></image></view>
+    <view class="gy_text">个人资料</view>
+    <view class="gy_jt"><image src="../image/zuojiantou.png"></image></view>
+  </view>
+  <view class="gy hengxiang">
+    <view class="gy_img"><image src="../image/women.png"></image></view>
+    <view class="gy_text">关于我们</view>
+    <view class="gy_jt"><image src="../image/zuojiantou.png"></image></view>
+  </view>
+</view>

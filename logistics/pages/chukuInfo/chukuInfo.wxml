@@ -1,0 +1,50 @@
+<!--pages/chukuInfo/chukuInfo.wxml-->
+<view class="hengxian"></view>
+<view class="big container">
+<!-- 状态 -->
+  <view class="zt hengxiang">
+    <view class="zc hengxiang" wx:for="{{zt}}" wx:key="index">
+      <view class="zc_img" bindtap="bindtapzc" data-id="{{item.id}}">
+      <image src="{{navid1==item.id ? '../image/xuankuang2.png':'../image/xuankuang.png'}}"></image></view>
+      <view class="{{navid1==item.id ? 'zc_text':'yc_text'}}">{{item.name}}</view>
+    </view>
+  </view>
+<!-- 回收数量 -->
+  <view class="hs hengxiang">
+    <view class="hs_text">回收数量：</view>
+    <view class="hs_sl yincang">2</view>
+  </view>
+  <view class="hs hengxiang">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{ycarray}}" class="pic">
+      <view class="hengxiang">
+        <view class="hs_text yincang">{{ycarray[index]}}</view>
+        <view class="hs_img"><image src="../image/xiajiantou.png"></image></view>
+      </view>
+    </picker>
+  </view>
+  <view class="hs hengxiang">
+    <picker bindchange="bindChangecz" value="{{czindex}}" range="{{czarray}}" class="pic">
+      <view class="hengxiang">
+        <view class="hs_text yincang">{{czarray[czindex]}}</view>
+        <view class="hs_img"><image src="../image/xiajiantou.png"></image></view>
+      </view>
+    </picker>
+  </view>
+<!-- 现场交接回单照片 -->
+  <view class="bk">
+    <view class="bk_name"><view>现场异常照片</view></view>
+    <view class="bk_img hengxiang">
+      <view class=""><image src="../image/caitu.png"></image></view>
+      <view class=""><image src="../image/caitu.png"></image></view>
+      <view class=""><image src="../image/shangchuan.png"></image></view>
+    </view>
+    <view class="bk_img hengxiang">
+      <view class=""><image src="../image/shangchuan.png"></image></view>
+      <view class=""><image src="../image/shangchuan.png"></image></view>
+      <view class=""><image src="../image/shangchuan.png"></image></view>
+    </view>
+  </view>
+
+  <view class="tijiao"><image src="../image/tjchuzhi.png" bindtap="completeTap"></image></view>
+
+</view>

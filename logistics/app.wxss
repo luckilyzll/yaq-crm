@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 200rpx;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+.hengxiang {
+  display: flex;
+  flex-direction: row;
+}
+.yincang{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.hengxian{
+  width: 100%;
+  height: 1rpx;
+  background: #f0f0f0;
+}

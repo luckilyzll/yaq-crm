@@ -1,0 +1,80 @@
+/* pages/my/my.wxss */
+page{
+  background:rgba(245,247,251,1);
+}
+.ban{
+  width: 100%;
+  margin-bottom: 26rpx;
+  position: relative;
+}
+.bg{
+  width: 100%;
+  height: 312rpx;
+}
+.tx{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 8rpx;
+}
+.tou{
+  width: 100%;
+  padding-left: 40%;
+  box-sizing: border-box;
+}
+.user{
+  width: 142rpx;
+  height: 142rpx;
+  border-radius: 50%;
+  overflow:hidden;
+  display: block;
+}
+.user open-data{
+  width: 142rpx;
+  height: 142rpx;
+  border-radius: 50%;
+}
+.nicheng{
+  font-size:38rpx;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  margin-top: 20rpx;
+}
+
+.gy{
+  width: 94%;
+  height: 87rpx;
+  line-height: 87rpx;
+  margin-left: 3%;
+  margin-right: 3%;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 2rpx 9rpx 0rpx rgba(4,40,100,0.06);
+  border-radius:10rpx;
+  margin-top: 26rpx;
+}
+.gy_img{
+  width: 15%;
+  text-align: left;
+}
+.gy_img image{
+  width: 45rpx;
+  height: 48rpx;
+  margin-top: 19.5rpx;
+  margin-left: 8rpx;
+}
+.gy_text{
+  width: 75%;
+  height: 87rpx;
+  font-size:30rpx;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+}
+.gy_jt{
+  width: 10%;
+  text-align: center;
+}
+.gy_jt image{
+  width: 14rpx;
+  height: 24rpx;
+  margin-top: 20rpx;
+}

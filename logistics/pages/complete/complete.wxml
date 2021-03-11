@@ -1,0 +1,14 @@
+<!--pages/complete/complete.wxml-->
+<view class="container">
+  <view class="big">
+    <view class="bk">
+      <view class="bk_name yincang"><view>出库完成回单拍照</view></view>
+      <view class="bk_img hengxiang">
+        <view class=""><image src="../image/shangchuan2.png"></image></view>
+        
+      </view>
+    </view>
+<!-- 提交 -->
+  <view class="tijiao"><image src="../image/tijiao.png"></image></view>
+  </view>
+</view>

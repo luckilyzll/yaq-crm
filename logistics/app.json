@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chukuInfo/chukuInfo",
+    "pages/tijiaoInfo/tijiaoInfo",
+    "pages/complete/complete",
+    "pages/box/box",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0395FD",
+    "navigationBarTitleText": "昕润物流",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#F64A24",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/zuorenwu.png",
+        "selectedIconPath": "pages/image/zuorenwu2.png",
+        "text": "接任务"
+      },
+      {
+        "pagePath": "pages/box/box",
+        "iconPath": "pages/image/jierenwu.png",
+        "selectedIconPath": "pages/image/jierenwu2.png",
+        "text": "做任务"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/image/my.png",
+        "selectedIconPath": "pages/image/my2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,38 @@
+<!--pages/box/box.wxml-->
+<view class="hengxian"></view>
+<view class="tab hengxiang">
+	<view class="tab_le {{navid1==item.id ?'dsh':''}}" wx:for="{{nav}}" wx:key="index" bindtap="bindnav" data-id="{{item.id}}"><text class="{{navid1==item.id ?'sh':''}}">{{item.name}}</text></view>
+</view>
+
+<view class="big container">
+	<view class="bk" wx:for="{{wuliu}}" wx:key="index">
+		<view class="name hengxiang">
+      <view class="name_im"><view class="dian">{{item.dian}}</view></view>
+			<view class="name_text yincang">{{item.name}}</view>
+		</view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/caozuo.png"></image></view>
+      <view class="sj_text yincang">操作：{{item.caozuo}}</view>
+    </view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/cheliang.png"></image></view>
+      <view class="sj_text yincang">车辆：{{item.cheliang}}</view>
+    </view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/dizhi.png"></image></view>
+      <view class="sj_text yincang">地址：{{item.dizhi}}</view>
+    </view>
+    <view class="sj hengxiang">
+      <view class="sj_img"><image src="../image/cangku.png"></image></view>
+      <view class="sj_text yincang">仓库：{{item.cangku}}</view>
+    </view>
+    <view class="sl">
+      <view>数量：<text class="sl_cs">{{item.shuliang}}</text></view>
+    </view>
+    <view class="rw hengxiang">
+      <view class="rw_time yincang">入库时间：{{item.shijian}}</view>
+      <view class="rw_img" wx:if="{{item.id==1}}"><image src="../image/rkchuzhi.png" bindtap="tijiaoTap"></image></view>
+      <view class="rw_img" wx:if="{{item.id==2}}"><image src="../image/chuku.png" bindtap="chukuTap"></image></view>
+    </view>
+	</view>
+</view>
